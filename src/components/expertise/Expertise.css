@@ -1,0 +1,108 @@
+.expertiesSliderSection{
+    margin-top: 4rem;
+} 
+.expertiesSliderSlide{
+    background: #F5F5F7;
+    cursor: pointer; 
+    overflow: hidden;
+    position: relative;
+}
+.expertiesSliderCard{
+    position: relative;
+    width: 100%;
+    height: 230px;  
+}
+.expertiesSliderCard::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all 0.2s ease-in;
+}
+.expertiesSliderSlide:hover .expertiesSliderCard::after{
+    height: 100%;
+    border-radius: 0;
+}
+.sliderCardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-left: 1rem; 
+    background: #F5F5F7; 
+}
+.cardfooter .mdHeading{
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "montserrat", sans-serif;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.cardfooter .mdHeading:hover{
+    color: var(--custom-yellow-color);
+}
+.sliderCardIconContainer{
+    width: 65px;
+    height: 60px; 
+    background: #E2E2EA;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;   
+}
+.expertiesSliderSlide:hover .sliderCardIconContainer{
+    background: var(--custom-yellow-color);
+}
+.sliderCardIcon{
+    font-size: 1.5rem; 
+    color: var(--custom-black-color);
+}
+.listOfServices{  
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; 
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--custom-white-color);
+    text-align: left;
+    font-family: "montserrat", sans-serif;
+    font-size: 0.8rem; 
+    transition: all 0.3s ease-in-out;
+    transform-origin: top; 
+    padding: 2rem 0.6rem;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    transform: scaleY(0);
+}
+.expertiesSliderSlide:hover .listOfServices{ 
+    transform: scaleY(1); 
+}
+.listOfServices li{
+    transition: all 0.3s ease-in-out;
+}
+.listOfServices li:hover{
+    color: var(--custom-yellow-color);
+}
+
+@media (max-width: 1200px) {
+    .expertiesSection{
+        padding: 4rem 1rem;
+    }
+    .expertiesSection .row{
+        row-gap: 1rem;
+    }
+}

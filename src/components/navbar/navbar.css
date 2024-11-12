@@ -1,0 +1,65 @@
+/* Navbar */
+nav.customNavbar {
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #fff;
+}
+.brandLogo {
+  width: 100px;
+  height: auto;
+}
+nav.customNavbar .nav-item .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 0;
+  margin-right: 2.4rem;
+  color: var(--custom-text-color);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.customNavbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--custom-yellow-color);
+  transition: all 0.3s ease-in-out;
+}
+.customNavbar .nav-link:hover::after {
+  width: 100%;
+}
+nav.customNavbar .nav-item .nav-link.customNavLinkBtn {
+  margin: 0;
+} 
+.navbar-brand{
+  position: relative; 
+}
+.logoText{
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem; 
+  position: absolute;
+  left: 50%;
+  bottom: -12%;
+  transform: translateX(-50%);
+}
+.logoText span{
+ color: var(--custom-yellow-color); 
+ font-weight: 600;
+}
+.navbar-toggler{
+  outline: none;
+  box-shadow: none !important;
+  border: none;
+}
+.hambergerIcon{
+  cursor: pointer;
+  color: var(--custom-yellow-color);
+  font-size: 1.8rem;
+}

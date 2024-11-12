@@ -1,0 +1,81 @@
+.aboutUsSection{
+    text-align: center;
+    padding: 4rem 1rem; 
+}
+.mdHeading{
+    color: #222;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+.aboutUsSection .mainText{ 
+    padding: 0 8%;
+}
+.mainText{
+    color: var(--custom-text-color);
+    font-size: 0.8rem; 
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.mainBtn{
+    display: inline-block;
+    padding: 0.8rem 1.9rem; 
+    color: var(--custom-white-color);
+    background-color: var(--custom-black-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+ .mainBtn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 53%;
+    background-color: var(--custom-yellow-color);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+ }
+ .mainBtn:hover::after{
+    height: 0%;
+ }
+ .mainBtn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 53%;
+    background-color: var(--custom-yellow-color);
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+ }
+ .mainBtn:hover::before{
+    height: 0%;
+ }
+ .mainBtn span{
+    position: relative;
+    z-index: 2;
+ }
+
+ @media screen and (max-width: 992px) {
+    .aboutUsSection{ 
+        padding: 4rem 0rem; 
+    }
+    .mdHeading{ 
+        font-size: 1.5rem; 
+    }
+    .aboutUsSection .mainText{ 
+        padding: 0;
+    } 
+    .mainBtn{ 
+        padding: 0.6rem 1.4rem;  
+        font-size: 0.9rem; 
+    } 
+    }

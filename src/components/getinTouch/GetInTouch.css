@@ -1,0 +1,72 @@
+.GetInTouchSection{ 
+    background: #F3F4F6; 
+}
+.GetInTouchSection .row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0; 
+}
+.getInTouchContainer{
+    padding: 3rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.getInTouchContainer .mdHeading{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3rem;
+}
+.getInTouchContainer .mdHeading::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: var(--custom-yellow-color);
+    bottom: -20px;
+    left: 0;
+}
+.getInTouchContainer .mainBtn{
+    background-color: var(--custom-white-color);
+    color: var(--custom-yellow-color);
+    margin-top: 2rem;
+}
+.getInTouchContainer .mainBtn::after{
+    top: 50%;
+    height: 0;
+}
+.getInTouchContainer .mainBtn::before{
+    bottom: 50%;
+    height: 0;
+}
+.getInTouchContainer .mainBtn:hover{
+    color: var(--custom-white-color);
+}
+.getInTouchContainer .mainBtn:hover::after{
+    height: 50%;
+}
+.getInTouchContainer .mainBtn:hover::before{
+    height: 50%;
+}
+.getInImgContainer{
+    width: 100%;
+}
+.getInImgContainer img{
+    width: 100%; 
+    height: auto;
+}
+
+@media screen and (max-width: 992px) { 
+    .getInTouchContainer{
+        padding: 3rem 0;
+        padding-left: 1rem; 
+    } 
+    .getInTouchContainer .mdHeading::after{ 
+        width: 30%;
+        height: 3px; 
+    } 
+    
+}

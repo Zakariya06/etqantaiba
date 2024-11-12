@@ -1,0 +1,32 @@
+.logoContain{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+    row-gap: 4rem;
+}
+.clientLogo{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.clientLogo:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 922px) {
+    .clientLogo{
+        width: 150px;
+    }
+    .clientSection{
+        padding: 4rem 1rem;
+    }
+    .logoContain{ 
+        gap: 1rem;
+        row-gap: 4rem;
+        justify-content: center;
+    }
+}

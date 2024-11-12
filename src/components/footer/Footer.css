@@ -1,0 +1,99 @@
+.footerSection {
+  background: rgba(0, 0, 0, 0.87);
+  color: var(--custom-white-color);
+  padding-top: 5rem;
+}
+.footerSection .mdHeading {
+  margin-bottom: 2rem;
+  color: var(--custom-yellow-color);
+}
+.footerSection .footerLinks {
+  color: var(--custom-white-color);
+  text-decoration: none;
+  color: var(--custom-gray-color);
+  transition: all 0.3s ease-in-out;
+}
+.footerSection .footerLinks:hover {
+  color: var(--custom-yellow-color);
+  text-decoration: underline;
+}
+.footerLinkList {
+  list-style-type: none;
+  padding: 0;
+}
+.footerLinkList li {
+  padding: 0.5rem 0;
+}
+.contactInfo .footerLinks {
+  color: var(--custom-gray-color);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-bottom: 0.7rem;
+}
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.socialLinks .footerLinks {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--custom-yellow-color);
+  color: var(--custom-black-color);
+  border-radius: 2px;
+  transition: all 0.3s ease-in;
+}
+.socialLinks .footerLinks:hover {
+  background: var(--custom-black-color);
+  color: var(--custom-yellow-color);
+  transform: translateY(-3px);
+}
+.formGroup {
+  margin-bottom: 1rem;
+}
+.formInput {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--custom-gray-color);
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  color: var(--custom-black-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.footerForm .mainBtn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.footerLogo {
+  width: 180px;
+  height: auto;
+  cursor: pointer;
+}
+.footerSection .mainText {
+  color: var(--custom-gray-color);
+  margin-top: 2rem;
+}
+.footerCopyWrite {
+  margin: 0;
+  margin-top: 5rem;
+  text-align: center;
+  color: var(--custom-gray-color);
+  background: #1d1d1d;
+  padding: 1.6rem 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+    .footerForm{
+        padding-top: 3rem;
+    }
+}
